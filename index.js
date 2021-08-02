@@ -6,13 +6,13 @@ const readmeGenerator = (answers) =>
 `# ${answers.title}
 
 ## Table of Contents
-* Description
-* Installation
-* Usage Instructions
-* How to contribute
-* Test Instructions
-* License Used
-* Questions
+* [Description](#description)
+* [Installation](#installation)
+* [Usage Instructions](#usage-instructions)
+* [How to contribute](#how-to-contribute)
+* [Test Instructions](#test-instructions)
+* [License Used](#license-used)
+* [Questions](#questions)
 
 ## Description
 ${answers.description}
@@ -34,7 +34,7 @@ For this project I used: ${answers.license}
     
 ## Questions
 If you have any questions about the usage of my application, you can contact me here:
-### Github: ${answers.github}
+### Github: github.com/${answers.github}
 ### Email: ${answers.email}`;
 
 

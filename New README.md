@@ -1,24 +1,33 @@
-# README Generater
+# sample
+
+## Table of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Usage Instructions](#usage-instructions)
+* [How to contribute](#how-to-contribute)
+* [Test Instructions](#test-instructions)
+* [License Used](#license-used)
+* [Questions](#questions)
 
 ## Description
-Hi there! Welcome to my simple README generater, a quick and effective tool for generating professional readme files without all the fuss!
+this is a sample description
     
 ## Installation
-First, ensure you have successfully cloned my repository. THEN, ensure inquirer is install on your system, by typing "npm install inquirer" in your console. THEN, simply type "node index" to run the file
+test
 
 ## Usage Instructions
-Simply follow the console prompts to quickly and easily fill in your readme file. It's that simple!
+sample
     
 ## How to contribute
-If you would like to contribute to this project, simply email me at the address printed below in questions with a short description of your contribution and your github username, and if successful, I will add you to the repository
+sample
     
 ## Test Instructions
-to test my product, simply run it in the console and see what outcome you get
+sample
     
 ## License used:
-For this project I used: GNU General Public License
+For this project I used: NO LICENSE USED
     
 ## Questions
 If you have any questions about the usage of my application, you can contact me here:
-### Github: /jrostirolla
-### Email: j_rostirolla@hotmail.com
+### Github: github.com/jrostirolla
+### Email: sample@hotmail.com

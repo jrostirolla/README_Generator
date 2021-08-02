@@ -1,0 +1,23 @@
+Hi there! Welcome to my tutorial video!
+
+I'm just going to quickly show you how to run my program. It's
+super simple to start and will give you a professional looking 
+readme in no time.
+
+ 
+Hope this helps!
+============================================================
+
+Simple open the console on the folder with the generator files in it, then type "node index" in the console to start the program: 
+
+This will present you with a series of prompts. Simply answer the prompts, and these will be presented to you in a readme file!
+
+Observe ===>>
+
+In this option, you are presented with a list of options to choose from. If you did not use and licenses for your program, simply select NO LICENSE USED
+
+As you can see, the file has now been written into the folder with the software.
+
+
+This file has also been formatted to show links when the file is uploaded to your github.
+Hope this helps!
