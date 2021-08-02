@@ -2,6 +2,41 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
+const readmeGenerator = (answers) => 
+`# ${answers.title}
+
+## Table of Contents
+* Description
+* Installation
+* Usage Instructions
+* How to contribute
+* Test Instructions
+* License Used
+* Questions
+
+## Description
+${answers.description}
+    
+## Installation
+${answers.installation}
+
+## Usage Instructions
+${answers.usage}
+    
+## How to contribute
+${answers.contribution}
+    
+## Test Instructions
+${answers.test}
+    
+## License used:
+For this project I used: ${answers.license}
+    
+## Questions
+If you have any questions about the usage of my application, you can contact me here:
+### Github: ${answers.github}
+### Email: ${answers.email}`;
+
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -48,7 +83,8 @@ const questions = [
         'MIT License',
         'Mozilla Public License 2.0',
         'Common Development and Distribution License',
-        'Eclipse Public License 2.0'
+        'Eclipse Public License 2.0',
+        'NO LICENSE USED'
     ]
 },
 {
@@ -63,34 +99,9 @@ const questions = [
 },
 ];
 
-const readmeGenerator = (answers) => {
-    `# ${answers.title}
-
-    ## Description
-    ${answers.description}
-    
-    ## Installation
-    ${answers.installation}
-    
-    ## Usage Instructions
-    ${answers.usage}
-    
-    ## How to contribute
-    ${answers.contribution}
-    
-    ## Test Instructions
-    ${answers.test}
-    
-    ## License used:
-    For this project I used: ${answers.license}
-    
-    ## Questions
-    If you have any questions about the usage of my application, you can contact me here:
-    ### Github: ${answers.github}
-    ### Email: ${answers.email}`
-}
 
     // const generatedReadme = readmeGenerator(answers);
+
 
     // fs.writeFile(filename, JSON.stringify(generatedReadme, null, '\t'), (err) => {
     //    err ? console.log(err) : console.log('Your readme was successfully generated. Enjoy!')
@@ -105,6 +116,8 @@ const readmeGenerator = (answers) => {
 // }
 
 // TODO: Create a function to initialize app
+
+
 function init() {
     console.log(`\n
 Hi there!
@@ -119,7 +132,7 @@ Lets begin...\n
 
             const generatedReadme = readmeGenerator(answers);
             
-            fs.writeFile('README.md', generatedReadme, (err) => 
+            fs.writeFile('New README.md', generatedReadme, (err) => 
                 err ? console.log(err) : console.log('Your readme was successfully generated. Enjoy!')
              );
         })
