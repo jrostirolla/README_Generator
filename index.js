@@ -1,4 +1,3 @@
-// TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 
@@ -37,8 +36,6 @@ If you have any questions about the usage of my application, you can contact me 
 ### Github: github.com/${answers.github}
 ### Email: ${answers.email}`;
 
-
-// TODO: Create an array of questions for user input
 const questions = [
 {   
     type: 'input',
@@ -99,25 +96,6 @@ const questions = [
 },
 ];
 
-
-    // const generatedReadme = readmeGenerator(answers);
-
-
-    // fs.writeFile(filename, JSON.stringify(generatedReadme, null, '\t'), (err) => {
-    //    err ? console.log(err) : console.log('Your readme was successfully generated. Enjoy!')
-    // })
-
-
-
-// TODO: Create a function to write README file
-// function writeToFile(filename, data) {
-   
- 
-// }
-
-// TODO: Create a function to initialize app
-
-
 function init() {
     console.log(`\n
 Hi there!
@@ -128,8 +106,6 @@ Lets begin...\n
     inquirer
         .prompt(questions)
         .then((answers) => {
-            // console.log(answers)
-
             const generatedReadme = readmeGenerator(answers);
             
             fs.writeFile('New README.md', generatedReadme, (err) => 
@@ -137,8 +113,6 @@ Lets begin...\n
              );
         })
     }
-
-
 
 // Function call to initialize app
 init();
